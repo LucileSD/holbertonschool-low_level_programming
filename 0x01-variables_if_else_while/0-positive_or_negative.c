@@ -5,7 +5,7 @@
 /**
  * main - condition if else if and if
  *
- * Return Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

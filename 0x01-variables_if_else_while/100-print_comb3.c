@@ -6,18 +6,28 @@
  * Return: 0 (Success)
  */
 int main(void)
-{int num;
-	for (num = 1; num <= 89; num++)
-	{
-		putchar((num / 10) + '0');
-		putchar((num % 10) + '0');
-		if (num == 89)
-			continue;
-		putchar(',');
-		putchar(' ');
-	}
+{
+	int u, d;
 
-	putchar('\n');
+	for (d = 48; d < 57; d++)
+	{
+		for (u = d + 1; u <= 57; u++)
+		{
+
+		putchar(d);
+		putchar(u);
+			if (d == 56 && u == 57)
+			{	putchar('\n');
+				break;
+			}
+
+			{
+			putchar(',');
+			putchar(' ');
+			}
+
+	}
+	}
 
 	return (0);
 }

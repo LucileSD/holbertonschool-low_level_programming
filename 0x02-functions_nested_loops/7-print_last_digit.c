@@ -3,9 +3,9 @@
 /**
  * print_last_digit - prints the last digit of a number with a
  * function in an header
- *@n: the number
+ * @n: the number
  *
- * Return 0
+ * Return: 0
  */
 int print_last_digit(int n)
 {

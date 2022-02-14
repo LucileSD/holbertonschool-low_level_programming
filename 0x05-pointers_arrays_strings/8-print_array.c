@@ -12,6 +12,13 @@ void print_array(int *a, int n)
 {
 	int i;
 
+	while (a[n] != '\0')
+	{
+		n++;
+	}
+
+	n = n - 3;
+
 	for (i = 0; i < n - 1; i++)
 	{
 

@@ -17,7 +17,7 @@ void print_array(int *a, int n)
 		n++;
 	}
 
-	n = n - 3;
+	n = n - 2;
 
 	for (i = 0; i < n - 1; i++)
 	{
@@ -25,7 +25,7 @@ void print_array(int *a, int n)
 		printf("%d ,", a[i]);
 	}
 
-	printf("%d\n", a[i]);
+	printf("\n");
 
 
 }

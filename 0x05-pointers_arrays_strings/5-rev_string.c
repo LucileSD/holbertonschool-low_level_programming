@@ -17,7 +17,7 @@ void rev_string(char *s)
 
 	rev = lent - 1;
 
-	while (rev > lent / 2)
+	while (rev >= lent / 2)
 	{
 		tmp = s[rev];
 		s[rev] = s[forw];

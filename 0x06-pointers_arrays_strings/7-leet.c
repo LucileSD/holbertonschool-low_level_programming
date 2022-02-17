@@ -7,7 +7,7 @@
 char *leet(char *tab)
 {
 	int l, n;
-	char lit[] = "a4A4e3E3o0O0t7T71L1";
+	char lit[] = "a4A4e3E3o0O0t7T7l1L1";
 
 	for (l = 0; tab[l] != '\0'; l++)
 	{

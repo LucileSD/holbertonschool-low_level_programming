@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ *main - change number
+ *Return: None
+ */
 
 int main(void)
 {

@@ -14,7 +14,7 @@ char *rot13(char *tab)
 	{
 		for (l = 0; low[l] != '\0'; l++)
 		{
-			if (tab[n] == low[l]
+			if (tab[n] == low[l])
 			{
 				tab[n] = upp[l];
 				break;

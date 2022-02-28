@@ -13,6 +13,10 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
+		if (i == 50)
+		{
+			printf("%d", c);
+		}
 		printf("%d, ", c);
 	}
 	return (0);

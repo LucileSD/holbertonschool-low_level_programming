@@ -6,7 +6,8 @@
 */
 int main(void)
 {
-	int i, c, a = 0, b = 1;
+	int i;
+	long int c, a = 0, b = 1;
 
 	for (i = 3; i <= 50; i++)
 	{
@@ -19,5 +20,6 @@ int main(void)
 		}
 		printf("%d, ", c);
 	}
+	printf("\n");
 	return (0);
 }

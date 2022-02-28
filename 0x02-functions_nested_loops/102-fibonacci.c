@@ -10,6 +10,7 @@ int main(void)
 
 	for (i = 3; i <= 50; i++)
 	{
+		c > 0;
 		c = a + b;
 		a = b;
 		b = c;

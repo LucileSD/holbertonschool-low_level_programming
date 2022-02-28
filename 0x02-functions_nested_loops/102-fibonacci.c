@@ -10,7 +10,6 @@ int main(void)
 
 	for (i = 3; i <= 50; i++)
 	{
-		printf("%d, %d, ", a, b);
 		c = a + b;
 		a = b;
 		b = c;

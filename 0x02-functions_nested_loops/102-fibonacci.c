@@ -16,9 +16,9 @@ int main(void)
 		b = c;
 		if (i == 50)
 		{
-			printf("%d", c);
+			printf("%ld", c);
 		}
-		printf("%d, ", c);
+		printf("%ld, ", c);
 	}
 	printf("\n");
 	return (0);

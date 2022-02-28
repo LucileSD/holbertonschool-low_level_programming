@@ -15,7 +15,10 @@ int main(void)
 		a = b;
 		b = c;
 		if (i == 52)
+		{
 			printf("%ld", c);
+			break;
+		}
 		printf("%ld, ", c);
 	}
 	printf("\n");

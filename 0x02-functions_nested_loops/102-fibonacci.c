@@ -14,11 +14,11 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		if (i == 50)
+		if (i != 50)
 		{
-			printf("%ld", c);
+			printf("%ld, ", c);
 		}
-		printf("%ld, ", c);
+		printf("%ld", c);
 	}
 	printf("\n");
 	return (0);

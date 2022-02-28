@@ -15,7 +15,7 @@ int main(void)
 		a = b;
 		b = c;
 		if (i == 52)
-			printf("%d", c);
+			printf("%ld", c);
 		printf("%ld, ", c);
 	}
 	printf("\n");

@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* fib - 50 first numbers of fibonacci
+* main - 50 first numbers of fibonacci
 *
 *Return: none
 */

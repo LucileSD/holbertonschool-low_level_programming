@@ -2,16 +2,18 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *create_array - creates an array of chars, and initializes it with a specific char
+ *create_array - creates an array of chars,
+ *and initializes it with a specific char
  *@c: the charactere
+ *@size: size of the array
  *Return: Null
  */
 char *create_array(unsigned int size, char c)
 {
 	char *ptr;
-	unsigned i;
+	unsigned int i;
 
-	ptr =(char *)malloc(size * sizeof(char));
+	ptr = (char *)malloc(size * sizeof(char));
 	if (size == 0)
 	{
 		return (NULL);

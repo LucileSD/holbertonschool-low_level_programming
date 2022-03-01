@@ -10,9 +10,9 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int i;
-	char *dest;
-	unsigned int size = strlen(str);
+	int i;
+	char *dest = NULL;
+	int size = strlen(str);
 
 	dest = (char *)malloc((size + 1) * sizeof(char));
 

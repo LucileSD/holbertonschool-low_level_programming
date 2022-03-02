@@ -12,14 +12,16 @@ char *_strdup(char *str)
 {
 	int i;
 	char *dest;
-	int size = strlen(str);
-
-	dest = (char *)malloc((size + 1) * sizeof(char));
+	int size;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+
+	size = _strlen(str);
+	dest = (char *)malloc((size + 1) * sizeof(char));
+
 	if (dest == NULL)
 	{
 		return (NULL);
@@ -28,5 +30,23 @@ char *_strdup(char *str)
 	{
 		dest[i] = str[i];
 	}
+	dest[i] = '\0';
 	return (dest);
+}
+#include "main.h"
+/**
+ *_strlen - returns the length of a string
+ *@s: the pointer for the lenght
+ *
+ *Return: 0
+ */
+int _strlen(char *s)
+{
+	int p = 0;
+
+	while (s[p] != '\0')
+	{
+		p++;
+	}
+	return (p);
 }

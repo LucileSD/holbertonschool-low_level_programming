@@ -14,14 +14,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *d = NULL;
 
 	d = malloc(sizeof(dog_t));
+	if (d == NULL || name == NULL || owner == NULL)
+		return (NULL);
 	if (d != NULL)
 	{
 		d->name = _strdup(name);
 		d->age = age;
 		d->owner = _strdup(owner);
 	}
-	else
-		return (NULL);
 	return (d);
 }
 

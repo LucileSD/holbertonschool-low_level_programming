@@ -23,6 +23,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		else
 			printf("%s%s", separator, va_arg(ptr, char *));
 	}
-	printf("\n");
 	va_end(ptr);
+	printf("\n");
 }

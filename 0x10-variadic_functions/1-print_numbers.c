@@ -10,10 +10,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list ptr;
 	unsigned int i;
 
-	if (!separator)
+	if (!separator || ptr == NULL)
 		return;
-	if (n == 0)
-		return (0);
 
 	va_start(ptr, n);
 	for (i = 0; i < n; i++)

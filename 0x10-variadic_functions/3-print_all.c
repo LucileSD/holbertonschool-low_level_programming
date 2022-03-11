@@ -66,8 +66,9 @@ void print_all(const char *const format, ...)
 		{
 			printf("%s", separator);
 			format_of[j].f(ptr);
+			separator = ", ";
 		}
-		separator = ", ";
+
 		i++;
 	}
 	va_end(ptr);

@@ -8,4 +8,14 @@ int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char *const format, ...);
+/**
+ * struct typetype - struct format
+ * @type: format
+ * @f: function
+ */
+typedef struct typetype
+{
+	char *print;
+	void (*f)(va_list);
+} _type_t;
 #endif

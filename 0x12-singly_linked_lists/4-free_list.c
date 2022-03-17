@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_list -
+ * free_list - frees list
  * @head: the first node
  * Return: None
  */

@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
- * @brief
- *
+ *print_list - print linked list in main
+ *@h: the head of the list
+ *Return: the count of elements
  */
 size_t print_list(const list_t *h)
 {

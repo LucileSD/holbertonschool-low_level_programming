@@ -2,7 +2,7 @@
 /**
  *insert_nodeint_at_index - inserts a new node at a given position
  *@head: the head of the list
- *@n:
+ *@n: the new data
  *@idx: index of the place of the new node
  * Return: the adress of the new node
  */
@@ -26,6 +26,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			temp = temp->next;
 			pos++;
 		}
+
 		new->next = temp->next;
 		temp->next = new;
 	}

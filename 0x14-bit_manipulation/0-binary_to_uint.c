@@ -11,7 +11,7 @@ unsigned int binary_to_uint(const char *b)
 	int i;
 	unsigned int len;
 
-	len = strlen(b) - 1;
+	len = _strlen(b) - 1;
 
 	if (b == NULL)
 		return (0);
@@ -27,4 +27,20 @@ unsigned int binary_to_uint(const char *b)
 		k *= 2;
 	}
 	return (val);
+}
+/**
+ * _strlen - function that returns the length of a string
+ * @s: string to returns the length
+ * Return: Return the length of the string
+ */
+
+int _strlen(const char *s)
+{
+
+	int strlen = 0;
+
+	while (s[strlen] != '\0')
+		strlen++;
+
+	return (strlen);
 }

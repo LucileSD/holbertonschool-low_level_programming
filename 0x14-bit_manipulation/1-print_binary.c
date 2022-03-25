@@ -5,18 +5,9 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i;
-	unsigned int j;
-
-	for (i = 10; i >= 0; i--)
+	if (n > 1)
 	{
-		j = n >> i;
-
-		if (j & 1)
-			_putchar(1 + '0');
-		else
-			_putchar(0 + '0');
+		print_binary(n >> 1);
 	}
-
-	_putchar(n & 1);
+	_putchar((n & 1) + '0');
 }

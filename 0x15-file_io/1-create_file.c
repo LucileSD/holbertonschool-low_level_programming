@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * create_file - creates a file
- * @fileanme: the file created
+ * @filename: the file created
  * @text_content: the text in the file
  * Return: 1 if succeed
  */

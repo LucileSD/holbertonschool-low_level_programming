@@ -8,12 +8,12 @@
 int main(int argc, char *argv[])
 {
 	const char *file_to, *fl_from;
-	int fd, fd2, write_file, close_file, read_file, close_file2;
+	int fd, fd2, write_file, close_file, read_file = 1, close_file2;
 	char buff[BUFFER_SIZE];
 
 	if (argc < 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp fl_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	fl_from = argv[1], file_to = argv[2];
@@ -24,7 +24,6 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	fd2 = open(file_to, O_WRONLY | O_TRUNC | O_CREAT, 0664);
-	read_file = 1;
 	while (read_file != 0)
 	{
 		read_file = read(fd, buff, BUFFER_SIZE);
@@ -43,8 +42,9 @@ int main(int argc, char *argv[])
 	close_file = close(fd), close_file2 = close(fd2);
 	if (close_file < 0 || close_file2 < 0)
 	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n",
+				fd == -1 ? fd : fd2);
 		exit(100);
-		printf("Error: Can't close fd FD_VALUE\n");
 	}
 	return (0);
 }

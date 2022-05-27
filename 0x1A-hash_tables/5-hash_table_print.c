@@ -9,21 +9,21 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *tmp = NULL;
 	char *empty = "", *comma = ", ";
 
-	if (!ht)
-		return;
-
-	printf("{");
-	while (index < ht->size)
+	if (ht)
 	{
-		tmp = ht->array[index];
-		while (tmp)
+		printf("{");
+		while (index < ht->size)
 		{
-			printf("%s", empty);
-			printf("'%s' : '%s'", tmp->key, tmp->value);
-			empty = comma;
-			tmp = tmp->next;
+			tmp = ht->array[index];
+			while (tmp)
+			{
+				printf("%s", empty);
+				printf("'%s' : '%s'", tmp->key, tmp->value);
+				empty = comma;
+				tmp = tmp->next;
+			}
+			index += 1;
 		}
-		index += 1;
+		printf("}\n");
 	}
-	printf("}\n");
 }

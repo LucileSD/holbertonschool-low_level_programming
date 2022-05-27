@@ -22,7 +22,7 @@ void hash_table_print(const hash_table_t *ht)
 				empty = comma;
 				tmp = tmp->next;
 			}
-			index += 1;
+			index ++;
 		}
 		printf("}\n");
 	}

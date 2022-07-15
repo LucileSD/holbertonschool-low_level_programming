@@ -9,6 +9,13 @@
 
 
 def island_perimeter(grid):
+    """
+        calculate the perimeter of an island in a grid
+        args:
+            grid
+        return:
+            the perimeter
+    """
     row_num = len(grid)
     if row_num == 0 or len(grid[0]) == 0:
         return 0

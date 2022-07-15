@@ -1,0 +1,17 @@
+# makefile with clean
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+
+all : ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
+
+clean :
+	rm -rf *~
+oclean :
+	rm -rf *.o
+fclean :
+	rm -rf *~ ${NAME} *.o
+re : ${OBJ}
+	${CC} ${OBJ} -o ${NAME}

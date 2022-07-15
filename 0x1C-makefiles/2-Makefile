@@ -1,14 +1,9 @@
 # makefile with variables
-all : ${NAME}
-
 CC = gcc
-SRC = *.c
-OBJ = *.o
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
 NAME = school
 
-${NAME} : school.o main.o
-	${CC} -o ${NAME} ${OBJ}
-${OBJ} : school.c
-	${CC} -o ${OBJ} -c ${SRC} -W -Wall -ansi -pedantic
-${OBJ} : main.c m.h
-	${CC} -o ${OBJ} -c ${SRC} -W -Wall -ansi -pedantic
+all : ${OBJ}
+	${CC} ${OBJ} -o ${NAME} 
+

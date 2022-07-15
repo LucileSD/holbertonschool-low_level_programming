@@ -1,12 +1,7 @@
 # makefile with variable
-all : school
 
 CC = gcc
 SRC = *.c
 
-school : school.o main.o
-	${CC} -o school school.o main.o
-school.o : school.c
-	${CC} -o school.o -c ${SRC} -W -Wall -ansi -pedantic
-main.o : main.c m.h
-	${CC} -o main.o -c ${SRC} -W -Wall -ansi -pedantic
+all:
+	${CC} ${SRC} -o school

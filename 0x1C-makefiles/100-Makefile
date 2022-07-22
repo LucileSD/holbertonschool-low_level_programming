@@ -14,7 +14,7 @@ clean :
 	${RM} *~ ${NAME}
 
 oclean :
-	${RM} ${wildcard *.o}
+	${RM} ${OBJ}
 
 fclean : clean oclean
 

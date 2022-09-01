@@ -9,7 +9,7 @@
  */
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
-	listint_t *tmp = list, *low;
+	listint_t *tmp = list, *low = list;
 	size_t count = 0, jump;
 
 	if (!list || size < 1)
@@ -23,7 +23,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	{
 		low = tmp;
 		count = 0;
-		while (tmp->next && count < jump)
+		while (tmp && tmp->next && count < jump)
 		{
 			tmp = tmp->next;
 			count++;
